@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Analysis Board</title>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/play5board.js"></script>
+    
+    <style>
+        .div-main-border {
+            padding:6px; 
+            margin:6px;
+            border:1px solid gray;
+            border-radius:6px;
+        }
+        .grid-item {
+            float:left;   
+        }
+        .grid-item {
+            float:left;
+        }
+        .grid-item {
+            float:left;
+        }
+        
+        .game-title {
+            color:#666666;
+        }
+        
+        .game-title .name {
+            color:#306bba;
+            margin:4px;
+            font-size:x-large;
+        }
+        
+        .game-title .person {
+            color:#5279b7;
+            margin:4px;
+        }
+        
+        .game-title .info {
+            color:#2b63af;
+            font-family: monospace;
+            padding:6px;
+        }
+    </style>
+</head>
+    
+<body>
+    <h3>Sample 1</h3>
+    <div id="divGameBoardAnalysis" class="play5board" pb-width="400" pb-editable="true" pb-rawstring="h8,i7,j6,i8">
+    </div>
+    
+    <div style="display:inline-block">
+        <h3>Sample 2</h3>
+        <h4>依畫面寬度塞棋盤</h4>
+        <div class="div-main-border grid-item">
+            <div class="play5board" pb-width="300" pb-editable="false" pb-rawstring="h8,i9,g7,i6">
+                <span style="">Read Only</span>
+            </div>
+        </div>
+        <div class="div-main-border grid-item">
+            <div class="play5board" pb-width="300" pb-editable="true" pb-rawstring="h8,i9,g7,i6">
+                <span style="">Editable</span>
+            </div>
+        </div>
+        <div class="div-main-border grid-item">
+            <div class="play5board" pb-width="300" pb-editable="true" pb-rawstring="h8,i9,g7,i6">
+                <span style="">Editable</span>
+            </div>
+        </div>
+        <div class="div-main-border grid-item">
+            <div class="play5board" pb-width="300" pb-editable="true" pb-rawstring="h8,i6,h7,j8">
+                <span style="">Editable</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="div-main-border" style="display:inline-block">
+        <h3>Sample 3</h3>
+        <div class="grid-item">
+            <div class="play5board" pb-width="500" pb-editable="false" pb-rawstring="h8,i9,g7,i6">
+                <div class="game-title">
+                    <div style="border-bottom:1px #A1A1A1 solid; margin:6px">
+                        <span class="name">名人賽決賽第五場</span>
+                        <span class="person">587</span> vs <span class="person">阿摘</span>
+                    </div>
+                    
+                    <div style="margin:6px">
+                        <span class="info">花月５打:I6,I7,G8,G4</span>
+                        <span class="info">用時:587(47)-阿摘(30)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-item div-main-border " style="width:300px; display:block; height:100%">
+            This is your comment
+        </div>
+    </div>
+    
+</body>
+    
+</html>
